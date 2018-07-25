@@ -1,0 +1,431 @@
+/**
+Theme Name: Poseidon - Astra Child theme
+Author: Division of Teaching and Learning
+Author URI: https://dtl.ucf.edu
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: poseidon-astra-child-theme
+Template: astra
+*/
+
+a {
+  color: #0275d8;
+}
+
+a:focus, a:hover {
+    color: #014c8c;
+  
+}
+
+/*--------- Text color ------*/
+.gold-text {color: #ffcc00;}
+.white-text {color: #fff;}
+
+#3_button .gold-text {color: #ffcc00;}
+
+
+/*--------- Header ------*/
+.main-header-bar {
+  text-decoration: none;
+}
+.main-header-bar a:hover, .footer-adv  a:hover {
+  text-decoration: none;
+}
+
+
+.main-header-bar .sub-menu li a{
+  color: #636c72;
+}
+
+.main-header-bar .sub-menu li:hover {
+  background-color: #f8f8f8;
+}
+.main-header-bar .sub-menu li a:hover {
+  color: #000;
+}
+
+
+.main-header-bar .sub-menu .current_page_item {
+  background-color: #f8f8f8;
+}
+
+.main-header-bar .sub-menu .current_page_item a {
+    color: #000;
+}
+
+
+
+
+.site-title a {
+  text-decoration: none;
+}
+
+.footer-adv a {
+  text-decoration: none;
+}
+
+.gold-opacity {
+  background-color:  rgba(255, 204, 0, .80);
+  padding: 5px 12px;
+  font-weight: 800;
+}
+
+
+/*--------- spacecing ------*/
+
+.ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {
+      padding: 1.34em 2.67em 8.34em 2.67em;
+}
+
+.ugs-edit {
+  padding: .5em 6.43em;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.ugs-edit p {
+  margin-bottom: 0;
+}
+.ugs-edit  a {
+  font-weight: 700;
+
+}
+
+
+/*--------- button ------*/
+button a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+
+
+/*--------- position ------*/
+.relative {
+  position: relative;
+}
+
+.float-right {
+  float: right;
+}
+
+
+/*--------- Test Header 2 ------*/
+
+@media (min-width: 769px)
+{
+  .main-header-bar {
+        padding: 1em 0 0 0;
+    }
+}
+
+.header-main-layout-2 .ast-site-title-wrap {
+  text-align: left;
+}
+
+.header-main-layout-2 .site-title {
+  -webkit-box-pack: left;
+-webkit-justify-content: left;
+-moz-box-pack: left;
+-ms-flex-pack: left;
+justify-content: left;
+}
+
+.header-main-layout-2 .site-branding {
+  /*padding-bottom: 0em;*/
+}
+
+@media (min-width:480px)
+{
+  .header-main-layout-1 .site-title {
+  /*  max-width:  60%; */
+  }
+}
+
+.header-main-layout-1 .site-title a  {
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+.header-main-layout-1 .site-description {
+  font-size: 1.1em;
+}
+
+
+/*--------- Navbar ------*/
+
+/*
+.main-header-bar {
+      padding: 0 0 1em 0;
+}
+*/
+
+.dtl_ugs_units {
+  vertical-align: top;
+  background-color: #fff;
+}
+
+.main-header-menu a, .ast-header-custom-item a {
+    padding: 0 1em;
+}
+
+#primary-menu >li > a {
+  color: #3a3a3a;
+
+}
+@media (min-width:480px)
+{
+#primary-menu >li > a::after {
+       content: '';
+       display: block;
+       margin: auto;
+       height: 5px;
+       width: 0px;
+       margin-top: 0px;
+       background: transparent;
+       -moz-transition: width .5s ease, background-color .5s ease;
+       -webkit-transition: width .5s ease, background-color .5s ease;
+       -ms-transition: width .5s ease, background-color .5s ease;
+       transition: width .5s ease, background-color .5s ease;
+   }
+
+   #primary-menu > li > a:hover::after {
+       width: 100%;
+       background: #ffcc00;
+   }
+
+   #primary-menu > li.active > a::after{
+       content: '';
+       display: block;
+       margin: auto;
+       height: 3px;
+       margin-top: 0px;
+       width: 100%;
+       background: #ffcc00;
+   }
+ }
+
+
+
+/*--------- Header image ------*/
+
+.header-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+}
+
+
+.footer-adv-layout-2 {
+  color: #fff;
+  border-bottom: 6px solid #fcc805;
+}
+
+.footer-adv-layout-2 .footer-adv-overlay{
+      background-color: #222;
+}
+
+.footer-adv-layout-2 .site_name {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.footer-adv-layout-2 .site-identifier {
+  font-size: 1.2em;
+}
+
+.footer-adv-layout-2 .ugs {
+  font-size: 1.2em;
+
+}
+
+.footer-adv-layout-2 a {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.footer-adv-layout-2 a:hover {
+  color: #ffcc00;
+}
+
+.footer-adv-layout-2 .footer-adv-widget-1 {
+
+}
+
+.footer-adv-layout-2 .footer-adv-widget-2 {
+
+}
+
+@media (min-width:480px)
+{
+   .footer-adv-layout-2 .footer-adv-widget-1 {
+
+
+   }
+}
+
+.footer-adv {
+
+}
+
+.ast-small-footer {
+  border-top: none;
+}
+
+.dtl-ugs-footer {
+  text-align: center;
+
+}
+
+@media (min-width:480px)
+{
+     .tagline {
+         font-size: 1.1em;
+         position: absolute;
+         left: 50%;
+         top: -27px;
+         margin: 0 -200px 0 0;
+         padding: 10px 24px;
+         webkit-transform: translateX(-50%);
+         -moz-transform: translateX(-50%);
+         -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+         transform: translateX(-50%);
+         font-weight: bolder;
+         -webkit-font-smoothing: antialiased;
+         background: #fcc805;
+         color: black;
+         line-height: 1.5em;
+         text-transform: uppercase;
+         letter-spacing: 0.1em;
+         z-index: 10;
+     }
+ }
+
+ /* sidebar css */
+
+
+ /* sidebar menu */
+
+
+
+ .sidebar-main .advanced-sidebar-menu {
+   background-color: #edecea;
+ }
+
+
+
+
+
+
+  .advanced-sidebar-menu li a {
+    display: block;
+    /* border-bottom: 2px dotted #ddd; */
+    border-bottom: 2px solid #fff;
+    color: #4a3c31;
+    padding: .7em;
+    transition: background-color .3s;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+
+
+ .advanced-sidebar-menu > li > a:first-child {
+   background-color: #ccc;
+     /*color: #fff; */
+   font-size: 1.4em;
+   font-weight: 800;
+
+ }
+
+
+
+  .advanced-sidebar-menu a:hover {
+    /* background-color: #fc0; */
+    background-color: #b7b1ad;
+    text-decoration: none;
+}
+
+.advanced-sidebar-menu .current_page_item > a {
+    border-left: solid 5px #fc0;
+  /*  background-color: #f9f9f9; */
+}
+
+ #advanced_sidebar_menu-2 li {
+  margin-bottom: 0;
+}
+
+ /* sidebar widgets */
+
+ .widget-title {
+   /*   font-size: 15px;
+     text-transform: uppercase;*/
+     font-weight: 600;
+     position: relative;
+    /* margin-bottom: 30px;
+     margin-left: 0;
+     margin-right: 0;
+     padding-bottom: 12px; */
+ }
+
+
+
+.widget-title::after,
+.widget-title::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    background: rgb(229, 229, 229);
+}
+
+.widget-title {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+    background: transparent;
+
+}
+
+
+.widget-title:after {
+    width: 40px;
+    height: 2px;
+    background: rgb(255, 192, 0);
+}
+
+.widget a {
+    /*color: #222;
+    text-decoration: none; */
+}
+
+.widget a:hover {
+  /*  color: rgb(255, 192, 0);
+  border-bottom: solid 2px #fc0;*/
+}
+
+/*--------- Post Navigation ------*/
+.single .post-navigation a {
+  text-align: inherit;
+}
+
+.single .post-navigation .black-text {
+  color: #000;
+  font-weight: 600;
+}
