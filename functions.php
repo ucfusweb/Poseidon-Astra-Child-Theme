@@ -35,7 +35,7 @@ require ( get_stylesheet_directory() . '/inc/customizer/astra_hooks.php' );
 
 
 // added fields to the customizer
-//require ( get_stylesheet_directory() . '/inc/customizer/added_fields.php' );
+require ( get_stylesheet_directory() . '/inc/customizer/added_fields.php' );
 
 
 

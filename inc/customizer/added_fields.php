@@ -7,7 +7,7 @@ function your_theme_new_customizer_settings($wp_customize) {
 // add a setting for the unit phone number
 $wp_customize->add_setting('ugs_phone_number');
 // Add a control to upload the unit phone number
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ugs_phone_number',
+$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ugs_phone_number',
 array(
 'label' => 'Unit Phone Number',
 //'capability'     => 'edit_theme_options',
@@ -24,7 +24,7 @@ array(
 // add a setting for the unit phone number
 $wp_customize->add_setting('ugs_email');
 // Add a control to upload the unit phone number
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ugs_email',
+$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ugs_email',
 array(
 'label' => 'Unit Email',
 //'capability'     => 'edit_theme_options',
@@ -39,7 +39,7 @@ array(
 // add a setting for the unit address
 $wp_customize->add_setting('ugs_address');
 // Add a control to upload the unit address
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ugs_address',
+$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ugs_address',
 array(
 'label' => 'Unit Address',
 //'capability'     => 'edit_theme_options',
@@ -52,7 +52,7 @@ array(
 );
 
 
-$wp_customize->get_section('title_tagline')->title = __( 'Name & Logo' );
+//$wp_customize->get_section('title_tagline')->title = __( 'Name & Logo' );
 
 
 $collegeurl = ['http://undergrad.dev.ucf.edu',
@@ -64,7 +64,7 @@ $collegeurl = ['http://undergrad.dev.ucf.edu',
 if( in_array(get_site_url(), $collegeurl)){
 				$DivisionorCollege = "College of Undergraduate Studies";
 			return $DivisionorCollege;
-}else{		
+}else{
 		$DivisionorCollege = "Division of teaching and Learning2 fhdsfh ";
 		return $DivisionorCollege;
 
